@@ -1,0 +1,43 @@
+body {
+    font-family: var(--font-family-main);
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    background-color: var(--backgroung-main-color);
+    color: var(--main-text-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0px;
+}
+
+h2,
+h3 {
+    color: var(--h-color);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    min-height: auto;
+}
+
+

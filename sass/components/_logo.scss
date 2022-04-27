@@ -9,6 +9,13 @@
     color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+    .logo {
+        display: block;
+        margin-right: auto;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .logo { 
         margin-right: 93px;
@@ -23,3 +30,4 @@
 .logo__footer-color {
     color: var(--backgroung-main-color);
 }
+

@@ -18,276 +18,95 @@
 </head>
 
 <body >
-<!------------------------------ Header ----------------------------->
-<header class="header-section">
-    <div class="container header-container">
-        <nav class="nav-list">
-            <a lang="en" href="/" class="logo">Web<span class="logo__header-color">Studio</span></a>
-
-            <ul class="list nav-list">
+                                        <!--  Header  -->
+    <header class="header__section">
+        <div class="container header__container">
+    
+            <nav class="navigation">
+                <a lang="en" href="/" class="logo">Web<span class="logo__header-color">Studio</span></a>
+    
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="./index.html" class="nav-list__menu">Студия</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="./portfolio.html" class="nav-list__menu  current">Портфолио</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__menu">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <button type="button" class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+    
+            <ul class="header__contacts-list">
                 <li class="nav-list__item">
-                    <a href="./index.html" class="nav-list__menu">Студия</a>
+                    <a href="mailto:info@devstudio.com" class="header__contacts">
+                        <svg class="icon-envelope">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
                 </li>
                 <li class="nav-list__item">
-                    <a href="./portfolio.html" class="nav-list__menu current">Портфолио</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="" class="nav-list__menu">Контакты</a>
+                    <a href="tel:+380961111111" class="header__contacts">
+                        <svg class="icon-smartphone">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="list header-contacts-list">
-            
-            <li class="nav-list__item">
-                <a href="mailto:info@devstudio.com" class="header-contacts">
-                    <svg class="icon-envelope">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
-
-            <li class="nav-list__item">    
-                <a href="tel:+380961111111" class="header-contacts">
-                    <svg class="icon-smartphone">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-            </li>
-        </ul>
-    </div>
-</header>
-
-    <main>
-        <!------------------------------ Projects ----------------------------->
-        <section class="main-content-section">
-            <!--- h1 уже скрыт в css --->
-            <div class="container project-container">
-                <h1 class="visually-hidden">Наши проекты</h1>
-                
-                <ul class="list filters-list">
-                    <li class="filters-list__radio-button">
-                        <button type="button" class="radio-button current">Все</button>
-                    </li>
-                    <li class="filters-list__radio-button">
-                        <button type="button" class="radio-button">Веб-сайты</button>
-                    </li>
-                    <li class="filters-list__radio-button">
-                        <button type="button" class="radio-button">Приложения</button>
-                    </li>
-                    <li class="filters-list__radio-button">
-                        <button type="button" class="radio-button">Дизайн</button>
-                    </li>
-                    <li class="filters-list__radio-button">
-                        <button type="button" class="radio-button">Маркетинг</button>
-                    </li>
-                </ul>  
-
-                <ul class="list projects-list">
-                    <li class="project-list-item">
-                        <a class="project-item-link" href="" target="_blank" title="Технокряк" rel="noopener nofollow">   
-                            <div class="project__wrapper">                                                     
-                            <img class="projects-photo" src="./images/project-1.jpg" alt="Веб-сайт Технокряк">
-                            <p class="project__overlay">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
-                                о компании или частном лице. </p>
-                            </div>   
-                            <div class="project-description">
-                                <h2 class="project-description__name">Технокряк</h2>
-                                <p class="project-description__type">Веб-сайт</p>
-                            </div> 
-                            
-                        </a>
-                    </li>
-                    <li class="project-list-item">
-                        <a class="project-item-link" href="" target="_blank" title="Постер New Orlean vs Golden Star" rel="noopener nofollow">
-                            <div class="project__wrapper">
-                            <img class="projects-photo" src="./images/project-2.jpg" alt="Постер New Orlean vs Golden Star">
-                            <p class="project__overlay">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
-                                о компании или частном лице. </p>
-                            </div>   
-                            <div class="project-description">
-                                <h2 class="project-description__name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                                <p class="project-description__type">Дизайн</p>
-                            </div> 
-                        </a>
-                    </li>
-                    <li class="project-list-item">
-                        <a class="project-item-link" href="" target="_blank" title="Ресторан Seafood" rel="noopener nofollow">
-                            <div class="project__wrapper">
-                            <img class="projects-photo" src="./images/project-3.jpg" alt="Ресторан Seafood Лого">
-                            <p class="project__overlay">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
-                                о компании или частном лице. </p>
-                            </div>
-                            <div class="project-description">
-                                <h2 class="project-description__name">Ресторан <span lang="en">Seafood</span></h2>
-                                <p class="project-description__type">Приложение</p>
-                            </div> 
-                        </a>
-                    </li>
-                    <li class="project-list-item">
-                        <a class="project-item-link" href="" target="_blank" title="Проект Prime" rel="noopener nofollow">
-                            <div class="project__wrapper">
-                            <img class="projects-photo" src="./images/project-4.jpg" alt="Мониторные Наушники">
-                            <p class="project__overlay">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
-                                о компании или частном лице. </p>
-                            </div>   
-                            <div class="project-description">
-                                <h2 class="project-description__name">Проект Prime</h2>
-                                <p class="project-description__type">Маркетинг</p>
-                            </div> 
-                        </a>
-                    </li>
-                    <li class="project-list-item">
-                        <a class="project-item-link" href="" target="_blank" title="Проект Boxes" rel="noopener nofollow">
-                            <div class="project__wrapper">
-                            <img class="projects-photo" src="./images/project-5.jpg" alt="2 картонные коробки для упаковки">
-                            <p class="project__overlay">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
-                                о компании или частном лице. </p>
-                            </div>   
-                            <div class="project-description">
-                                <h2 class="project-description__name">Проект <span>Boxes</span></h2>
-                                <p class="project-description__type">Приложение</p>
-                            </div> 
-                        </a>
-                    </li>
-                    <li class="project-list-item">
-                        <a class="project-item-link" lang="en" href="" target="_blank" title="Inspiration has no Borders" rel="noopener nofollow">
-                            <div class="project__wrapper">
-                            <img class="projects-photo" src="./images/project-6.jpg" alt="Веб-сайт Inspiration has no Borders">
-                            <p class="project__overlay">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
-                                о компании или частном лице. </p>
-                            </div>   
-                            <div class="project-description">
-                                <h2 lang="en" class="project-description__name">Inspiration has no Borders</h2>
-                                <p class="project-description__type">Веб-сайт</p>
-                            </div> 
-                        </a>
-                    </li>
-                    <li class="project-list-item">
-                        <a class="project-item-link" href="" target="_blank" title="Издание Limited Edition" rel="noopener nofollow">
-                            <div class="project__wrapper">
-                            <img class="projects-photo" src="./images/project-7.jpg" alt="Издание Limited Edition">
-                            <p class="project__overlay">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
-                                о компании или частном лице. </p>
-                            </div>   
-                            <div class="project-description">
-                                <h2 class="project-description__name">Издание <span>Limited Edition</span></h2>
-                                <p class="project-description__type">Дизайн</p>
-                            </div> 
-                        </a>
-                    </li>
-                    <li class="project-list-item">
-                        <a class="project-item-link" href="" target="_blank" title="Проект LAB" rel="noopener nofollow">
-                            <div class="project__wrapper">
-                            <img class="projects-photo" src="./images/project-8.jpg" alt="Проект LAB">
-                            <p class="project__overlay">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
-                                о компании или частном лице. </p>
-                            </div>   
-                            <div class="project-description">
-                                <h2 class="project-description__name">Проект <span>LAB</span></h2>
-                                <p class="project-description__type">Маркетинг</p>
-                            </div> 
-                        </a>
-                    </li>
-                    <li class="project-list-item">
-                        <a class="project-item-link" lang="en" href="" target="_blank" title="Growing Business" rel="noopener nofollow">
-                            <div class="project__wrapper">
-                            <img class="projects-photo" src="./images/project-9.jpg" alt="Приложение Growing Business на экране ноутбука">
-                            <p class="project__overlay">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
-                                о компании или частном лице. </p>
-                            </div>   
-                            <div class="project-description">
-                                <h2 class="project-description__name">Growing Business</h2>
-                                <p class="project-description__type">Приложение</p>
-                            </div> 
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-                                        <!--  Footer  -->
-    <footer class="footer-background">
-        <div class="container footer-container">
-            
-            <div class="footer-blocks">
-                <a lang="en" href="/" class="logo"><span>Web</span><span class="logo__footer-color">Studio</span></a>
-                <address>
-                    <ul class="list footer-adress-container">
-                        <li class="footer-adress__list">
-                            <a class="address-list__link" href="https://goo.gl/maps/GgaBB5i8PTadJ9jeA" target="_blank" rel="noopener noreferer">г. Киев, пр-т Леси Украинки, 26</a>
-                        </li>
-                        <li class="footer-adress__list">
-                            <a class="address-list__link footer-adress__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="footer-adress__list">
-                            <a class="address-list__link footer-adress__link" href="tel:+380961111111">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-            
-            <div class="footer-blocks">
-                <p class="footer-to-join">ПРИСОЕДИНЯЙТЕСЬ</p>
-                <ul class="list social-links-footer">
-                    <li class="social-links icon-bg">
-                        <a href="" class="icon-socials-link-footer">
-                            <svg class="icon-socials-footer">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links icon-bg">
-                        <a href="" class="icon-socials-link-footer">
-                            <svg class="icon-socials-footer">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links icon-bg">
-                        <a href="" class="icon-socials-link-footer">
-                            <svg class="icon-socials-footer">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links icon-bg">
-                        <a href="" class="icon-socials-link-footer">
-                            <svg class="icon-socials-footer">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-                                        <!-- Contact form footer -->
-            <form class="contact-form-email">
-                <strong class="contact-form-email__h">Подпишитесь на рассылку</strong>
-                
-                <span class="contact-form-email__field">
-                    <input name="user_email" class="contact-form-email__input" required type="email" placeholder="E-mail">
-                    
-                    <button type="submit" class="btn submit-btn subscribe">Подписаться
-                        <svg class="subscribe__icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send" ></use>
-                        </svg>
-                    </button>
-                </span>
-                
-            </form>
-            
         </div>
-    </footer>
-    
+        <!-- Mobile menu -->
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-mobile-menu-close-btn"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__pages-list">
+                    <li class="mobile-menu__pages">
+                        <a href="/" class="mobile-menu__pages-link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__pages">
+                        <a href="" class="mobile-menu__pages-link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__pages">
+                        <a href="" class="mobile-menu__pages-link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__contacts-list">
+                    <li class="mobile-menu__tel">
+                        <a href="tel:+380961111111" class="header__contacts">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__e-mail">
+                        <a href="mailto:info@devstudio.com" class="header__contacts">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__socials-list">
+                    <li class="mobile-menu__socials">
+                        <a href="">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__socials">
+                        <a href=""><span class="mobile-menu__socials-divider">|</span>Twitter</a>
+                    </li>
+                    <li class="mobile-menu__socials">
+                        <a href=""><span class="mobile-menu__socials-divider">|</span>Facebook</a>
+                    </li>
+                    <li class="mobile-menu__socials">
+                        <a href=""><span class="mobile-menu__socials-divider">|</span>LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>

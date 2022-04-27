@@ -76,6 +76,12 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    display: block;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
@@ -192,6 +198,13 @@ img {
   margin-bottom: 32px;
 }
 
+.mobile-menu__pages-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__pages-link:hover, .mobile-menu__pages-link:focus {
+  color: var(--accent-color);
+}
+
 .mobile-menu__tel {
   margin-bottom: 32px;
   font-weight: 500;
@@ -207,6 +220,7 @@ img {
 
 .mobile-menu__contacts-list {
   display: block;
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -223,13 +237,117 @@ img {
 .mobile-menu__socials:not(:first-child) {
   margin-left: 20px;
 }
-.mobile-menu__socials::before(:not(first-child)) {
-  content: "";
-  height: 100%;
-  width: 1px;
-  color: var(--main-text-color);
+
+.mobile-menu__socials-divider {
+  margin-right: 10px;
+  color: rgba(33, 33, 33, 0.2);
 }
 
+.navigation {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: auto;
+}
+.nav-list .nav-list__item {
+  font-weight: 500;
+  margin-left: 50px;
+}
+.nav-list .nav-list__menu {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-list .nav-list__menu.current {
+  color: var(--accent-color);
+}
+
+.nav-list__item {
+  position: relative;
+}
+
+.nav-list__menu {
+  position: relative;
+  line-height: 1.14;
+  color: var(--h-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-list__menu:hover, .nav-list__menu:focus {
+  color: var(--accent-color);
+}
+.nav-list__menu.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -1px;
+  left: 0;
+  background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list {
+    justify-content: center;
+  }
+}
+.header__contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+.header__contacts-list .nav-list__item {
+  font-weight: 500;
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__contacts:hover, .header__contacts:focus {
+  color: var(--accent-color);
+}
+
+.icon-envelope,
+.icon-smartphone {
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .icon-envelope {
+    width: 14px;
+    height: 10px;
+  }
+
+  .icon-smartphone {
+    width: 10px;
+    height: 14px;
+  }
+
+  .header__contacts-list .nav-list__item {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts-list .nav-list__item {
+    margin-left: 30px;
+  }
+  .header__contacts-list .icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
+  .header__contacts-list .icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
+}
 .nav-list {
   display: none;
 }
@@ -242,6 +360,7 @@ img {
   position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header__container {
@@ -250,6 +369,33 @@ img {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .header__section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .header__contacts-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .header__contacts-list {
+    display: flex;
+  }
+}
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -270,9 +416,9 @@ img {
   --secondary-accent-color: #000000;
   --h-color: #212121;
   --backgroung-main-color: #ffffff;
-  --footer-adress-transparent: rgba(255, 255, 255, 0.6);
   --backgroung-hero-footer: #2f303a;
   --backgroung-team: #f5f4fa;
+  --footer-adress-transparent: rgba(255, 255, 255, 0.6);
   --font-family-main: "roboto", "sans-serif";
   --font-family-secondary: "raleway", "sans-serif";
   --icon-base-color: #afb1b8;

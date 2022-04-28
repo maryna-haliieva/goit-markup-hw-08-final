@@ -14,9 +14,12 @@
 @import './components/nav-list';
 @import './components/header-contacts';
 @import './components/_main-title';
+@import './components/check-box';
+@import './components/modal-close-btn';
 
 @import './layout/header';
 @import './layout/hero';
+@import './layout/modal-window';
 @import './layout/advantages';
 @import './layout/particularities';
 @import './layout/team';
@@ -24,7 +27,7 @@
 @import './layout/projects';
 @import './layout/footer';
 @import './layout/contact-form-footer';
-@import './layout/modal-window';
 
 @import './utils/variables';
+@import './utils/visually-hidden';
 

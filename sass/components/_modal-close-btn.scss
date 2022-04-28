@@ -24,7 +24,13 @@
     fill: var(--accent-color);
   }
 }
-    
-
+   
+@media screen and (max-width: 479px) {
+  .modal__close-btn {
+    height: 20px;
+    width: 20px;  
+    padding-top: 1px9;  
+  }
+}
     
     

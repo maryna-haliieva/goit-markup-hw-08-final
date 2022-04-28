@@ -32,13 +32,10 @@
     .header__contacts-list {
     display: block;
     }
-    }
+}
 
 @media screen and (min-width: 1200px) {
-    .mobile-menu-btn {
-        display: none;
-    }
-
+  
     .header__contacts-list {
         display: flex;
     }

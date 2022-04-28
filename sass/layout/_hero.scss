@@ -1,18 +1,23 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
-    max-width: 1600px;
-    margin: 0 auto;
-    height: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: auto;
 
-    color: var(--backgroung-main-color);
-    background-color: var(--backgroung-hero-footer);
+  color: var(--backgroung-main-color);
+  background-color: var(--backgroung-hero-footer);
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/bg-hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+  
 
+
+  

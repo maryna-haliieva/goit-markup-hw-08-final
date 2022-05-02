@@ -3,13 +3,13 @@
     padding-bottom: 60px;
 }
 
-.secondary-h {
+.secondary-title {
     margin-bottom: 50px;
 
     text-align: center;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
 }
 
@@ -17,6 +17,10 @@
     .main-content__section {
         padding-top: 94px;
         padding-bottom: 94px;
+    }
+
+    .secondary-title {
+        font-size: 36px;
     }
 }
 

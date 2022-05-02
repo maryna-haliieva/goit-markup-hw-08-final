@@ -1,3 +1,7 @@
+.advantages-list__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
 .advantages-list__icon {
     display: flex;
     align-items: center;
@@ -47,6 +51,7 @@
         &>.advantages-list__item {
             flex-basis: calc((100% - 4 * 30px) / 4);
             margin-left: 30px;
+            margin-bottom: 0;
         }
 
         &>.advantages-list__item:nth-child(4n+1) {

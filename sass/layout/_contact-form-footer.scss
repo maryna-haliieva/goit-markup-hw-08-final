@@ -10,11 +10,7 @@
     text-transform: uppercase;
 }
 
-// .contact-form-email__field {
-//     display: flex;
-//     width: 570px;
-//     align-items: baseline;
-// }
+
 
 .contact-form-email__input {
     display: flex;
@@ -38,7 +34,6 @@
 
 .subscribe {
     display: flex;
-    
     margin: auto;
 
     .subscribe__icon {
@@ -49,5 +44,22 @@
 @media screen and (min-width: 480px) {
     .contact-form-email__input {
         width: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .contact-form-email__field {
+        display: flex;
+        width: 570px;
+        align-items: baseline;
+    }
+
+    .subscribe {
+        margin: 12px;
+    }
+
+    .contact-form-email__h {
+        justify-content: flex-start;
     }
 }

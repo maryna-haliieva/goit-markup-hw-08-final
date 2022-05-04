@@ -927,7 +927,7 @@ img {
   justify-content: center;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479.98px) {
   .partners-list {
     flex-basis: calc((100% - 30px) / 1);
   }
@@ -986,7 +986,6 @@ img {
   }
 }
 .projects-list > .project-list__item {
-  margin-right: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
@@ -1058,6 +1057,7 @@ img {
 .address-list__link {
   color: var(--backgroung-main-color);
   line-height: 2;
+  font-style: normal;
 }
 
 .footer-adress__link {

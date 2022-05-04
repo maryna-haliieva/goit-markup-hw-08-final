@@ -28,11 +28,7 @@
     justify-content: center;
 }
 
-// .partners-link {
-//     width: 100%;
-// }
-
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479.98px) {
 
     .partners-list {
         flex-basis: calc((100% - 1 * 30px) / 1);

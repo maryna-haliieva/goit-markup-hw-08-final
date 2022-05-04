@@ -62,16 +62,17 @@
     padding: 12px;
 
     fill: var(--backgroung-main-color);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .social-links-list__footer {
+    display: block;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
         outline: none;
-        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+        border-radius: 50%;
     }
 }
 .social-links-list__footer {
@@ -128,14 +129,6 @@
         justify-content: flex-start;
     }
 }
-// &:hover+.icon-socials__footer,
-// &:focus+.icon-socials__footer {
-//     fill: var(--accent-color);
-// }
-
-
-
-//
 
 
 

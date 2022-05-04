@@ -4,6 +4,10 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+
 @import './base/base';
 @import './base/container';
 @import './base/main-content-section';
@@ -17,6 +21,7 @@
 @import './components/check-box';
 @import './components/modal-close-btn';
 @import './components/icon-socials';
+@import './components/project-wrapper';
 
 @import './layout/header';
 @import './layout/hero';
@@ -28,7 +33,8 @@
 @import './layout/projects';
 @import './layout/footer';
 @import './layout/contact-form-footer';
+@import './layout/radio-button';
 
-@import './utils/variables';
-@import './utils/visually-hidden';
+
+
 

@@ -222,10 +222,6 @@ img {
     fill: var(--accent-color);
   }
 
-  .mobile-menu__pages-list {
-    margin-bottom: 302px;
-  }
-
   .mobile-menu__pages {
     color: var(--secondary-accent-color);
     font-weight: 500;
@@ -281,6 +277,12 @@ img {
     color: rgba(33, 33, 33, 0.2);
   }
 }
+.mobile-menu__container-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 479px) {
   .mobile-menu__socials-list {
     flex-wrap: wrap;

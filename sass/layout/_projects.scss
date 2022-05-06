@@ -71,7 +71,7 @@
 
 @media screen and (min-width: 1200px) {
         
-    .project-list-item {
+    .project-list__item {
         flex-basis: calc((100% - 3 * 30px) / 3);
         
         &:nth-child(n+4) {

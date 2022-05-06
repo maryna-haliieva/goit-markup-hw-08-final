@@ -1047,13 +1047,13 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .project-list-item {
+  .project-list__item {
     flex-basis: calc((100% - 90px) / 3);
   }
-  .project-list-item:nth-child(n+4) {
+  .project-list__item:nth-child(n+4) {
     margin-top: 30px;
   }
-  .project-list-item:not(:nth-child(3n+1)) {
+  .project-list__item:not(:nth-child(3n+1)) {
     margin-left: 30px;
   }
 }

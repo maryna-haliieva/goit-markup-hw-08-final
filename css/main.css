@@ -98,7 +98,7 @@ img {
 }
 
 .secondary-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
   font-size: 28px;
@@ -113,6 +113,7 @@ img {
 
   .secondary-title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 .logo {
@@ -869,6 +870,7 @@ img {
   .our-team {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .our-team__list {
@@ -1014,51 +1016,57 @@ img {
   line-height: 1.9;
 }
 
-@media screen and (max-width: 767.98px) {
-  .project-list__item:not(:first-child) {
-    margin-top: 30px;
-  }
+.project-list__item {
+  display: flex;
+  width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 1999.98px) {
+
+.project-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1999.98px) and (min-width: 768px) {
   .projects-list {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     margin-right: -30px;
+    margin-bottom: -30px;
   }
-
+}
+@media screen and (min-width: 768px) and (max-width: 1999.98px) {
   .project-item__link {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
-
+}
+@media screen and (min-width: 768px) and (max-width: 1999.98px) {
   .project-description {
     flex-grow: 1;
   }
-
+}
+@media screen and (min-width: 768px) and (max-width: 1999.98px) {
   .project-list__item {
-    flex-basis: calc((100% - 60px) / 2);
+    display: flex;
+    width: 100%;
   }
-  .project-list__item:nth-child(2n) {
-    margin-left: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1999.98px) and (min-width: 768px) {
+  .project-list__item {
+    flex-basis: calc(50% - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
-  .project-list__item:nth-child(n+3) {
-    margin-top: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1999.98px) and (min-width: 1200px) {
+  .project-list__item {
+    flex-basis: calc(33.3333333333% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
   .projects-list {
     justify-content: center;
-  }
-
-  .project-list__item {
-    flex-basis: calc((100% - 90px) / 3);
-  }
-  .project-list__item:nth-child(n+4) {
-    margin-top: 30px;
-  }
-  .project-list__item:not(:nth-child(3n+1)) {
-    margin-left: 30px;
   }
 }
 .footer__section {

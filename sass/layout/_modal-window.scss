@@ -4,6 +4,7 @@
     left: 0;
     height: 100vh;
     width: 100vw;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -20,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px;
+    padding: 40px;
     width: 450px;
     background-color: var(--backgroung-main-color);
 }
@@ -31,7 +32,7 @@
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.17;
+    line-height: 1.5;
     color: var(--h-color);
 }
 
@@ -94,6 +95,8 @@
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    letter-spacing: 0.01em;
+
     &:hover,
     &:focus {
         outline: none;
@@ -113,9 +116,8 @@
         height: 580px;
         padding: 40px;
     }
+
     .contact-form-message {
         font-size: 12px;
     }
 }
-
-

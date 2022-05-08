@@ -16,28 +16,31 @@
 .advantages__h {
     text-align: center;
     margin-bottom: 10px;
-    
+
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.17;
 }
 
 .advantages__description {
-    line-height: 1.17;
+    line-height: 1.7;
 }
 
 @media screen and (min-width: 768px) {
     .advantages-list {
         display: flex;
-        flex-wrap: wrap;    
+        flex-wrap: wrap;
     }
+
     .advantages-list__item {
         width: 354px;
     }
+
     .advantages-list__item:nth-child(2n) {
-       margin-left: 30px;
+        margin-left: 30px;
     }
+
     .advantages__h {
         text-align: start;
     }
@@ -63,5 +66,3 @@
         width: 270px;
     }
 }
-
-

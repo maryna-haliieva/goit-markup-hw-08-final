@@ -4,8 +4,10 @@
 
 .checkbox__contact-form-label {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-end;
+  font-size: 12px;
+  letter-spacing: 0.03em;
 
   &::before {
     content: "";
@@ -14,13 +16,13 @@
     height: 15px;
     border: 2px solid var(--h-color);
     border-radius: 2px;
-    
+
     cursor: pointer;
     margin-right: 8px;
   }
 }
-    
-.checkbox__contact-form:checked + .checkbox__contact-form-label::before {
+
+.checkbox__contact-form:checked+.checkbox__contact-form-label::before {
   background-image: url(../images/check-icon.svg);
   border: none;
 }
@@ -30,8 +32,8 @@
   text-decoration: underline
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .checkbox__contact-form-label {
-    font-size: 12px;
-  }  
+    font-size: 14px;
+  }
 }
